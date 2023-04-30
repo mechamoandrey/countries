@@ -1,0 +1,18 @@
+.home {
+  padding: 40px 0px;
+}
+
+.country-list {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  --min-column-size: 16rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+  padding: 0 56px;
+  
+  @media (min-width: 1400px) {
+    gap: 74px;
+    padding: 0 0;
+  }
+}

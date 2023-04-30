@@ -1,0 +1,55 @@
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/card';
+@import 'components/filterSelect';
+
+@import 'pages/home';
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  background: #FAFAFA;
+}
+
+.country {
+  padding: 0 28px;
+
+  &__image {
+    width: 100%;
+    max-width: 320px;
+    height: 229px;
+    margin-bottom: 44px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    color: #111517;
+  }
+}
+
+.back-button {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111517;
+  text-decoration: none;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  margin-bottom: 64px;
+  width: fit-content;
+}
+
+
+.aqui {
+  display: block;
+}

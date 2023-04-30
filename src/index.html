@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./sass/main.scss">
+</head>
+<body class="page home">
+
+  <div class="filter-select">
+    <span class="_filterSelectedValue">Filter by Region</span>
+    
+    <ul class="filter-select__container">
+      <li class="filter-select__item _filterSelect" data-region="allCountries">Filter by Region</li>
+      <li class="filter-select__item _filterSelect" data-region="africa">Africa</li>
+      <li class="filter-select__item _filterSelect" data-region="americas">America</li>
+      <li class="filter-select__item _filterSelect" data-region="asia">Asia</li>
+      <li class="filter-select__item _filterSelect" data-region="europe">Europe</li>
+      <li class="filter-select__item _filterSelect" data-region="oceania">Oceania</li>
+    </ul>
+  </div>
+  
+  <ul id="countryList" class="country-list">
+    ...loading
+  </ul>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
