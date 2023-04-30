@@ -1,0 +1,15 @@
+body[data-theme='light'] {
+  --background-color: hsl(0, 0%, 98%);
+  --elements-color: hsl(0, 0%, 100%);
+  --toggle-icon-bg: unset;
+  --toggle-icon-weight: 300;
+  --text-color: hsl(200, 15%, 8%);
+}
+
+body[data-theme='dark'] {
+  --background-color: hsl(207, 26%, 17%);
+  --elements-color: hsl(209, 23%, 22%);
+  --toggle-icon-bg: hsl(0, 0%, 100%);
+  --toggle-icon-weight: 900;
+  --text-color: hsl(0, 0%, 100%);
+}

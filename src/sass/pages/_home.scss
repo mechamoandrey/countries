@@ -1,5 +1,5 @@
 .home {
-  padding: 40px 0px;
+  padding: 0 0 40px;
 }
 
 .country-list {
@@ -14,5 +14,38 @@
   @media (min-width: 1400px) {
     gap: 74px;
     padding: 0 0;
+
+    &:hover {
+      .card {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.card {
+  @media (min-width: 1400px) {
+    transition: all 320ms ease-in-out;
+
+    &:hover {
+      opacity: 1 !important;   
+    }
+  }
+}
+
+.header {
+  margin-bottom: 24px;
+
+  @media (min-width: 1400px) {
+    margin-bottom: 48px;
+  }
+}
+
+.filters {
+  padding: 0 16px;
+  
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }

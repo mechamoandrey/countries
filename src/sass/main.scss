@@ -1,8 +1,11 @@
+@import 'abstracts/variables';
+
 @import 'base/reset';
 @import 'base/typography';
 
 @import 'components/card';
 @import 'components/filterSelect';
+@import 'components/header';
 
 @import 'pages/home';
 
@@ -11,7 +14,7 @@ a {
 }
 
 .page {
-  background: #FAFAFA;
+  background: var(--background-color);
 }
 
 .country {
@@ -28,7 +31,7 @@ a {
     font-weight: 800;
     font-size: 22px;
     line-height: 30px;
-    color: #111517;
+    color: var(--text-color);
   }
 }
 
@@ -39,7 +42,7 @@ a {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
-  color: #111517;
+  color: var(--text-color);
   text-decoration: none;
   height: 32px;
   display: flex;

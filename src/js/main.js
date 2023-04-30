@@ -1,5 +1,6 @@
 import { countryListConstructor } from './constructors'
 import { regionFilter } from './modules/regionFilter'
+import { toggleTheme } from './modules/toggleTheme';
 import { state } from './states'
 
 const getCountryData = async () => {
@@ -14,3 +15,5 @@ const getCountryData = async () => {
 getCountryData()
 
 regionFilter()
+
+toggleTheme()

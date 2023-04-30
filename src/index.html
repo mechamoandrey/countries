@@ -6,21 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./sass/main.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body class="page home">
 
-  <div class="filter-select">
-    <span class="_filterSelectedValue">Filter by Region</span>
-    
-    <ul class="filter-select__container">
-      <li class="filter-select__item _filterSelect" data-region="allCountries">Filter by Region</li>
-      <li class="filter-select__item _filterSelect" data-region="africa">Africa</li>
-      <li class="filter-select__item _filterSelect" data-region="americas">America</li>
-      <li class="filter-select__item _filterSelect" data-region="asia">Asia</li>
-      <li class="filter-select__item _filterSelect" data-region="europe">Europe</li>
-      <li class="filter-select__item _filterSelect" data-region="oceania">Oceania</li>
-    </ul>
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Where in the world?</h1>
+      <button class="header__toggle _toggleTheme">
+        <i class="header__icon fa fa-moon-o"></i>
+        Dark Mode
+      </button>
+    </div>
+  </header>
+
+  <div class="filters">
+    <div class="filters__container">
+      <div class="filter-select">
+        <span class="filter-select__selected _filterSelectedValue">Filter by Region</span>
+        <i class='filter-select__arrow fas fa-angle-down'></i>
+        
+        <ul class="filter-select__container">
+          <li class="filter-select__item _filterSelect" data-region="allCountries">All Countries</li>
+          <li class="filter-select__item _filterSelect" data-region="africa">Africa</li>
+          <li class="filter-select__item _filterSelect" data-region="americas">America</li>
+          <li class="filter-select__item _filterSelect" data-region="asia">Asia</li>
+          <li class="filter-select__item _filterSelect" data-region="europe">Europe</li>
+          <li class="filter-select__item _filterSelect" data-region="oceania">Oceania</li>
+        </ul>
+      </div>
+    </div>
   </div>
+
   
   <ul id="countryList" class="country-list">
     ...loading
