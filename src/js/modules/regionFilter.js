@@ -1,5 +1,6 @@
 import { countryListConstructor } from "../constructors";
 import { state } from "../states";
+import { setStorageObject } from "../utils";
 
 const countryRegionFilter = ({ array, filterParam }) => {
   const isStateHaveCurrentRegion = state[filterParam]
@@ -20,6 +21,8 @@ const countryRegionFilter = ({ array, filterParam }) => {
     }
   
     state[filterParam] = filteredResult
+
+    setStorageObject({ key: filterParam, object: filteredResult })
   
     countryListConstructor({ countries: filteredResult })
   }

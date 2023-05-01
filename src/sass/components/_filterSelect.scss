@@ -51,7 +51,7 @@
   }
 
   &__item {
-    transition: all 150ms ease-in;
+    transition: opacity 150ms ease-in;
     cursor: pointer;
     font-weight: 400;
     font-size: 12px;

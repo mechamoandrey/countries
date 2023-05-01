@@ -1,5 +1,4 @@
 const setTheme = (theme) => {
-
   document.body.dataset.theme = theme
   window.localStorage.setItem('theme', theme)
 }

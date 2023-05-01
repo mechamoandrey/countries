@@ -25,7 +25,7 @@
 
 .card {
   @media (min-width: 1400px) {
-    transition: all 320ms ease-in-out;
+    transition: opacity 320ms ease-in-out;
 
     &:hover {
       opacity: 1 !important;   
