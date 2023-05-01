@@ -1,0 +1,17 @@
+.country {
+  padding: 0 28px;
+
+  &__image {
+    width: 100%;
+    max-width: 320px;
+    height: 229px;
+    margin-bottom: 44px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--text-color);
+  }
+}
