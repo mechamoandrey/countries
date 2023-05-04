@@ -1,5 +1,5 @@
-export const countryListConstructor = ({ countries }) => {
-  const countryList = document.getElementById('countryList')
+export const countryListConstructorInDOM = ({ countries }) => {
+  const countryList = document.querySelector('._countryList')
   
   countryList.innerHTML = ''
 

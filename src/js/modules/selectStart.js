@@ -1,6 +1,6 @@
 import { state } from "../states";
 
-const countryRegionFilter = ({ array, filterParam }) => {
+const filter = ({ array, filterParam }) => {
   const isStateHaveCurrentRegion = state[filterParam]
 
   if(isStateHaveCurrentRegion) {
@@ -23,23 +23,23 @@ const countryRegionFilter = ({ array, filterParam }) => {
   }
 }
 
-const setSelectedFilterValue = (nameValue) => {
+const setTitleOption = (nameValue) => {
   const selectedValue = document.querySelector('._filterSelectedValue')
 
   selectedValue.innerHTML = nameValue
 }
 
-const toggleFilterClassname = () => {
+const toggleSelectClassname = () => {
   const filterSelect = document.querySelector('.filter-select')  
 
   filterSelect.classList.toggle('open')
 }
 
-export const regionFilter = () => {
-  const filterSelect = document.querySelector('.filter-select')  
-  const optionsFilter = document.querySelectorAll('._filterSelect')
+export const selectStart = () => {
+  const filterSelect = document.querySelector('._select')  
+  const optionsFilter = document.querySelectorAll('._selectOption')
 
-  filterSelect.addEventListener('click', toggleFilterClassname)
+  filterSelect.addEventListener('click', toggleSelectClassname)
 
   for (let i = 0; i < optionsFilter.length; i++) {
     const option = optionsFilter[i]
@@ -48,13 +48,13 @@ export const regionFilter = () => {
     option.addEventListener('click', (e) => {
       e.stopPropagation()
 
-      countryRegionFilter({
+      filter({
         array: state.allCountries, 
         filterParam: option.dataset.region
       })
 
-      setSelectedFilterValue(optionValue)
-      toggleFilterClassname()
+      setTitleOption(optionValue)
+      toggleSelectClassname()
     })
   }
 }

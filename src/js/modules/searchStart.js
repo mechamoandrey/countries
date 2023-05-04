@@ -10,7 +10,7 @@ const saveInput = () => {
   console.log('Saving data');
 }
 
-export const search = () => {
+export const searchStart = () => {
   const searchInput = document.querySelector('._search')
 
   const processChanges = debounce(() => saveInput());
