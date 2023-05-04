@@ -15,19 +15,21 @@ import { setStorageObject } from './utils';
     setStorageObject({ key: 'allCountries', object: jsonData })
   
     state.allCountries = jsonData
-  }
-  
-  const isStateHaveAllCountries = state.allCountries.length > 0
-  
-  if(isStateHaveAllCountries) {
+
     countryListConstructor({ countries: state.allCountries})
-  } else {
-    getCountryData()
   }
   
+  getCountryData()
+   
   regionFilter()
   
   toggleTheme()
   
   search()
+
+  Object.defineProperty(state, "listResult", {
+    set: function(value) {
+      countryListConstructor({ countries: value })
+    }
+  });  
 })()
