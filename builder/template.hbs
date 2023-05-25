@@ -6,15 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./../../sass/main.scss">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
-<body class="page aa">
+<body class="page">
+   <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Where in the world?</h1>
+      <button class="header__toggle _toggleTheme">
+        <i class="header__icon fa fa-moon-o"></i>
+        Dark Mode
+      </button>
+    </div>
+  </header>
   <main class="country">
-    <a class="back-button" href="/index.html">Back</a>
+    <nav>
+      <a class="back-button" href="/index.html">Back</a>
+    </nav>
 
-    <img class="country__image" src="{{image}}" alt="The flag of Barbados is composed of three equal vertical bands of ultramarine, gold and ultramarine. The head of a black trident is centered in the gold band.">
+    <section class="country__container">
+      <img class="country__image" src="{{image}}" alt="{{altImage}}">
 
-    <h2>{{title}}</h2>
+      <div>
+        <h2 class="country__title">{{title}}</h2>
+        <dl>
+          <dt>Native Name:</dt>
+          <dd>{{nativeName}}</dd>
+
+          <dt>Population:</dt>
+          <dd>{{population}}</dd>
+
+          <dt>Region:</dt>
+          <dd>{{region}}</dd>
+
+          <dt>Subregion:</dt>
+          <dd>{{subregion}}</dd>
+
+          <dt>Capital:</dt>
+          <dd>{{capital}}</dd>
+        </dl>
+      </div>
+    </section>
   </main>
 
+  <script src="./../../js/pages/country.js"></script>
 </body>
 </html>

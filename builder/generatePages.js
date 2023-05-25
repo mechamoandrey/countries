@@ -16,7 +16,13 @@ const fetchData = async () => {
   json.forEach(async data => {
     const pageInformation = {
       title: data.name.common,
-      image: data.flags.svg
+      image: data.flags.svg,
+      population: data.population,
+      region: data.region,
+      subregion: data.subregion,
+      capital: data.capital,
+      nativeName: data.name.official,
+      altImage: data.flags.alt
     };
 
     const path = `${__dirname}/../src/countries/${data.name.common.replace(/ /g, '-').toLowerCase()}`

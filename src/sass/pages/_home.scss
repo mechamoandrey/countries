@@ -21,6 +21,10 @@
       }
     }
   }
+
+  &__initial-text {
+    color: var(--text-color)
+  }
 }
 
 .card {

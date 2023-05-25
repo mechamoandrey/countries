@@ -6,15 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./sass/main.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
-<body class="page aa">
+
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Where in the world?</h1>
+      <button class="header__toggle _toggleTheme">
+        <i class="header__icon fa fa-moon-o"></i>
+        Dark Mode
+      </button>
+    </div>
+  </header>
   <main class="country">
-    <a class="back-button" href="/index.html">Back</a>
+    <nav>
+      <a class="back-button" href="/index.html">Back</a>
+    </nav>
+    
+    <section class="country__container">
+      <img class="country__image" src="https://flagcdn.com/bb.svg" alt="The flag of Barbados is composed of three equal vertical bands of ultramarine, gold and ultramarine. The head of a black trident is centered in the gold band.">
 
-    <img class="country__image" src="https://flagcdn.com/bb.svg" alt="The flag of Barbados is composed of three equal vertical bands of ultramarine, gold and ultramarine. The head of a black trident is centered in the gold band.">
+      <div>
+        <h2 class="country__title">Belgium</h2>
+        <dl>
+          <dt>Native Name:</dt>
+          <dd>Belgie</dd>
+  
+          <dt>Population:</dt>
+          <dd>11,319,511</dd>
+  
+          <dt>Region:</dt>
+          <dd>Europe</dd>
+  
+          <dt>Subregion:</dt>
+          <dd>Western Europe</dd>
+  
+          <dt>Capital:</dt>
+          <dd>Brussels</dd>
+        </dl>
+      </div>
+    </section>
 
-    <h2>Belgium</h2>
   </main>
 
+  <script src="./js/pages/country.js"></script>
 </body>
 </html>

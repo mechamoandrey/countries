@@ -1,11 +1,31 @@
 .country {
   padding: 0 28px;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media (min-width: 1300px) {
+    padding: 0 0 ;
+  }
 
   &__image {
     width: 100%;
     max-width: 320px;
     height: 229px;
-    margin-bottom: 44px;
+    margin: 0 auto 44px;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+
+    @media (min-width: 800px) {
+      height: 241px;
+      margin: 0 0;
+      max-width: 400px;
+    }
+    
+    @media (min-width: 1000px) {
+      max-width: 560px;
+      height: 401px;
+    }
   }
 
   &__title {
@@ -13,5 +33,30 @@
     font-size: 22px;
     line-height: 30px;
     color: var(--text-color);
+    margin-bottom: 24px;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 18px 4px;
+    color: var(--text-color);
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+
+  &__container {
+
+    @media (min-width: 800px) {
+      display: flex;
+      gap: 40px;
+    }
+
+    @media (min-width: 1000px) {
+      gap: 140px;
+    }
   }
 }
+

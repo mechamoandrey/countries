@@ -1,4 +1,5 @@
 import { state } from "../states";
+import { setStorageObject } from "../utils";
 
 const filter = ({ array, filterParam }) => {
   const isStateHaveCurrentRegion = state[filterParam]
@@ -20,6 +21,8 @@ const filter = ({ array, filterParam }) => {
     state[filterParam] = filteredResult
 
     state.listResult = filteredResult
+
+    setStorageObject(filterParam, filteredResult)
   }
 }
 
