@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/*.html",
-    "build": "parcel build src/index.html",
-    "start": "node ./builder/generatePages.js",
-    "development": "node ./builder/generatePages.js && parcel src/**/*.html"
+    "start": "parcel src/*.html",
+    "build": "node ./builder/generatePages.js && parcel build src/index.html",
+    "generatePages": "node ./builder/generatePages.js",
+    "dev": "node ./builder/generatePages.js && parcel src/**/*.html"
   },
   "author": "",
   "license": "ISC",
